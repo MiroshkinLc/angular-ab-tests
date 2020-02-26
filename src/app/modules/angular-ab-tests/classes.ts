@@ -120,3 +120,10 @@ export class CookieHandler {
     document.cookie = cookieStr;
   }
 }
+
+export class TestStartedEvent {
+  constructor(
+      public scope: string,
+      public version: string
+  ) {}
+}
